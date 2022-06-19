@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="img/knife.png" type="image/x-icon">
+    <script src="templates.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?customize=1&always=1"></script>
+    <title>Adria Paradise - Wassenberg</title>
+</head>
+
+<body onload="render()">
+
+    <!-- Header Sektion -->
+
+    <header class="header-bg">
+        <div class="header">
+            <div class="lieferando">
+                <img src="img/knife.png">
+                <span class="lieferando-text">Lieferino</span>
+            </div>
+            <div class="adress">
+                <a href="http://www.googlemaps.com">Musterstraße 5, 41849 Wassenberg</a>
+            </div>
+            <div class="switches">
+                <img src="img/germany.png" class="flag" onclick="inConstruction()">
+                <img src="img/burger-bar.png" class="bars" onclick="inConstruction()">
+            </div>
+        </div>
+    </header>
+
+    <!-- ############################################## -->
+
+    <div class="menus">
+        <div class="main">
+            <div class="ordersection">
+                <div class="orderpic"></div>
+                <div class="orderlogo"><img src="img/adriaparadise2.png"></div>
+                <div class="infosection" onclick="closeInput()">
+                    <div class="info-panel-left">
+                        <h2 class="info-headline">Adria Paradise</h2>
+                        <span class="rating">
+                            <img src="img/star.png" class="star">
+                            <img src="img/star.png" class="star">
+                            <img src="img/star.png" class="star">
+                            <img src="img/star.png" class="star">
+                            <img src="img/rating.png" class="star">
+                            <span><a href="#">(659 Bewertungen)</a></span>
+                        </span>
+                    </div>
+                    <div class="info-panel-right">
+                        <div class="info-button" onclick="showHiddenInfo()">
+                            <img src="img/info.png">
+                        </div>
+                        <div class="follow-button" onclick="likeButton()">
+                            <img src="img/heart.png" id="likebutton">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="choosemenu" class="choosemenu">
+                <img src="img/lupe.png" id="lupe" class="lupe" onclick="openInput()">
+                <input id="input" class="inputfield d-none" placeholder="Suchbegriff..." type="text">
+                <button id="button" class="searchbutton d-none">Suche</button>
+                <a href="#content">Beliebte Gerichte</a>
+                <a href="#content">Fleisch- und Wildspezialitäten</a>
+                <a href="#content">Beilagen</a>
+                <a href="#content">Getränke</a>
+
+            </div>
+
+            <div class="menu" onclick="closeInput()">
+                <div id="content" class="favourite-dishes">
+                    <h3 class="block-headline">Beliebte Gerichte</h3>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+
+        <!-- ############################################## -->
+
+        <!-- sidepanel / Warenkorb -->
+
+        <div id="responsive-menu" class="sidemenu" onclick="closeResponsive()">
+            <div id="responsive-cart" class="cart" onclick="doNotClose(event)">
+                <div id="responsive-headline" class="side-headline">
+                    <h2>Warenkorb</h2>
+                </div>
+                <div id="cart" class="order-box"></div>
+                <div id="basketmenu" class="basketmenu"></div>
+                <div id="basketprice" class="basketprice"></div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- ############################################## -->
+
+   
+    <!-- responsive button -->
+   
+    <div class="responsivebasket d-none" onclick="responsiveBasket()">
+        <div id="itemsInCheckout" class="items-in-checkout d-flex">0</div>
+        <span class="responsiveBasketText">Warenkorb</span>
+    </div>
+
+
+    <!-- ############################################## -->
+
+    <!-- hidden info -->
+
+    <div id="hidden" class="hidden-bg d-none">
+        <div class="hidden-info">
+            <div class="hidden-header">
+                <h3 class="hidden-headline"><b>Über das Restaurant</b></h3>
+                <img src="img/close.png" class="close" onclick="closeHidden()">
+            </div>
+            <div class="hidden-choice">
+                <p class="hidden-rating">Bewertungen</p>
+                <p class="hidden-rating">Info</p>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40076.55311179605!2d6.108113889164157!3d51.1124348049714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0add2825f3a49%3A0x42760fc4a2a7b60!2s41849%20Wassenberg!5e0!3m2!1sde!2sde!4v1652116719973!5m2!1sde!2sde"
+                width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="opening-times">
+                <span class="hidden-headline-span">Öffnungszeiten</span>
+            </div>
+            <div class="opening-info">
+                <table class="opening-table">
+                    <tr>
+                        <td><b>Montag:</b></td>
+                        <td>Ruhetag</td>
+                    </tr>
+                    <tr>
+                        <td><b>Dienstag:</b></td>
+                        <td>11:00 - 23:00 Uhr</td>
+                    </tr>
+                    <tr>
+                        <td><b>Mittwoch:</b></td>
+                        <td>11:00 - 23:00 Uhr</td>
+                    </tr>
+                    <tr>
+                        <td><b>Donnerstag:</b></td>
+                        <td>11:00 - 23:00 Uhr</td>
+                    </tr>
+                    <tr>
+                        <td><b>Freitag:</b></td>
+                        <td>11:00 - 23:00 Uhr</td>
+                    </tr>
+                    <tr>
+                        <td><b>Samstag:</b></td>
+                        <td>11:00 - 00:00 Uhr</td>
+                    </tr>
+                    <tr>
+                        <td><b>Sonntag:</b></td>
+                        <td>16:00 - 00:00 Uhr</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="opening-times">
+                <span class="hidden-headline-span">Lieferkosten- & Mindestbestellwert</span>
+            </div>
+
+            <div class="opening-info">
+                <table class="opening-table">
+                    <tr>
+                        <td><b>Mindestbestellwert:</b></td>
+                        <td>15,00 €</td>
+                    </tr>
+                    <tr>
+                        <td><b>Lieferkosten:</b></td>
+                        <td>2,00 €</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="opening-times">
+                <span class="hidden-headline-span">Bezahlmöglichkeiten</span>
+            </div>
+
+            <div class="opening-info">
+                <table class="payoptions">
+                    <tr>
+                        <td><img src="img/cash.png"></td>
+                        <td><img src="img/paypal-logo.png"></td>
+                        <td><img src="img/eccash.png"></td>
+                        <td><img src="img/visa.png"></td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ############################################## -->
+
+
+    <div id="hidden-rating"></div>
+
+
+    <!-- Footer Sektion -->
+
+    <div class="footer">
+
+        <div class="terms">
+            <a href="#">AGB</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="#">Datenschutz</a>
+        </div>
+
+        <div class="lieferando">
+            <img src="img/knife.png">
+            <a href="index.html"><span class="lieferando-text">Lieferino</span></a>
+        </div>
+        <div class="icons">
+            <a href="https://www.flaticon.com/" title="plus icons">All icons created by Freepik -
+                Flaticon</a>
+        </div>
+
+    </div>    
+        <!-- ############################################## -->
+
+</body>
+
+</html>

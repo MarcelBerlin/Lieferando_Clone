@@ -1,0 +1,680 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0%;
+    font-family: 'Roboto';
+}
+
+span {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 3%;
+
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bg {
+    background-color: #FF6B00;
+    width: 100%;
+    height: 100px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.lieferando {
+    display: flex;
+    align-items: center;
+  
+}
+
+.lieferando-text {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    
+}
+
+.lieferando a {
+    text-decoration: none;
+}
+
+.lieferando img {
+    width: 50px;
+    height: auto;
+}
+
+.adress a {
+    color: white;
+    text-decoration: none;
+}
+
+.switches {
+    cursor: pointer;
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flag {
+    width: 20px;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+
+.bars {
+    width: 25px;
+    height: auto;
+}
+
+.main {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    
+}
+
+.info-headline {
+    margin-left: 3%;
+}
+
+.star {
+    width: 25px;
+}
+
+.infosection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.info-panel-left {
+    width: 500px;
+}
+
+.info-panel-right {
+    display: flex;
+    width: 85px;
+
+}
+
+.info-button {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 125ms ease-in-out;
+}
+
+.info-button:hover {
+    border-color: #2196F3;
+    transition: all 125ms ease-in-out;
+}
+
+.info-button img {
+    width: 20px;
+}
+
+.follow-button {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 40px;
+    height: 40px;
+    margin-left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 125ms ease-in-out;
+}
+
+.follow-button:hover {
+    border-color: #FF6B00;
+    transition: all 125ms ease-in-out;
+}
+
+.follow-button img {
+    width: 20px;
+}
+
+.rating {
+    padding-left: 3%;
+
+}
+
+.rating a {
+    text-decoration: none;
+    color: #FFC107;
+}
+
+.menus {
+    display: flex;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.ordersection {
+
+    width: 80vw;
+    height: 380px;
+    object-fit: cover;
+
+}
+
+.orderpic {
+    background-image: url(img/croatiafood.jpg);
+    background-position: 50% 47%;
+    object-fit: cover;
+    height: 250px;
+}
+
+.orderlogo {
+    position: absolute;
+    left: 35%;
+    top: 29%;
+
+}
+
+.orderlogo img {
+    position: relative;
+    height: 150px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    height: 100px;
+    width: 80vw;
+}
+
+.sidemenu {
+    margin: 0;
+    width: 20vw;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: -7px 0px 10px -10px rgb(0 0 0 / 35%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart {
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.side-headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+    font-weight: 700;
+    color: inherit;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.order-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    padding-top: 30px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.order-box img {
+    width: 50px;
+}
+
+.fullbasket {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.vis-basket {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    font-size: 14px;
+    border-bottom: 0.5px solid lightgrey;
+    margin-top: 10px;
+    
+}
+
+.basket-name {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basketbutton {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttons {
+    font-size: x-large;
+    color: #2196F3;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(59, 59, 59);
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+}
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+
+.hidden-bg {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.95;
+    z-index: 10;
+}
+
+.hidden-info {
+    position: relative;
+    top: 5%;
+    left: 25%;
+    width: 815px;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.hidden-header {
+    
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid lightslategray;
+}
+
+.hidden-choice {
+    background-color: white;
+    font-size: 12px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.opening-times {
+    height: 35px;
+    border-bottom: 1px solid lightslategray;
+    margin-top: 3%;
+}
+
+.opening-info {
+    width: 800px;
+    padding-bottom: 5px;
+}
+
+.opening-table {
+    width: 250px;
+    
+}
+
+.hidden-rating {
+    cursor: pointer;
+    padding-right: 5%;
+}
+
+.hidden-rating:hover {
+    color: #FFC107;
+}
+
+.hidden-headline {
+    font-weight: 400;
+}
+
+.hidden-headline-span {
+    width: 800px;
+    padding-left: 0%;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+
+}
+
+.location {
+    width: 750px;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+
+.close {
+    width: auto;
+    height: 25px;
+    cursor: pointer;
+}
+
+.inputfield {
+    margin-left: 1%;
+    height: 30px;
+    width: 300px;
+
+}
+
+.searchbutton {
+    margin-left: -1px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.choosemenu {
+    background-color: antiquewhite;
+    padding-left: 3%;
+    margin-bottom: 2%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+
+.lupe {
+    width: 20px;
+    cursor: pointer;
+}
+
+.choosemenu a {
+    text-decoration: none;
+    color: black;
+    padding: 1%;
+
+}
+
+.choosemenu a:hover {
+    background-color: #FF6B00;
+    color: white;
+    border-radius: 25px;
+
+}
+
+.block-headline {
+    background-color: antiquewhite;
+    margin-left: 4%;
+    margin-right: 3%;
+    padding: 1%;
+}
+
+.blocks {
+    margin-left: 4%;
+    margin-right: 3%;
+    margin-bottom: 25px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 125ms ease-in-out;
+}
+
+.blocks:hover {
+    border-color: #2196F3;
+    transition: all 125ms ease-in-out;
+}
+
+.dish {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addcross {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-top: -1px;
+    margin-right: -1px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 125ms ease-in-out;
+}
+
+.addcross:hover {
+    border-color: #2196F3;
+    transition: all 125ms ease-in-out;
+}
+
+.addcross img { 
+    width: 20px;
+}
+
+.price {
+    color: #FF6B00;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.basketamount {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.min-order {
+    background-color: #FFECB3;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.min-order-text {
+    font-size: 12px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.min-order-sum {
+    width: 85px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.order-sum {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.ordercosts {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.costs {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.final-costs {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 10px;
+    font-size: 16px;
+
+}
+
+
+.payment {
+    height: 100px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.orderbutton {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.paybutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #2196F3;
+    margin-top: 25px;
+    border: none;
+    color: antiquewhite;
+    font-size: 18px;
+    width: 85%;
+    height: 50px;
+    transition: all 125ms ease-in-out;
+   
+}
+
+.paybuttoncheck {
+    background-color: gray;
+}
+
+
+.paybutton:hover {
+    background-color: blue;
+    transition: all 125ms ease-in-out;
+}
+
+.paybuttoncheck:hover {
+    background-color: rgb(90, 90, 90);
+    transition: all 125ms ease-in-out;
+}
+
+.delete-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.delete-button img {
+    height: 25px;
+    width: auto;
+}
+
+.payoptions img{
+    width: 45px;
+    height: auto;
+}
+
+.impressum {
+    height: 100vh;
+}
+
+.impressum-headline {
+    padding-left: 3%
+}
